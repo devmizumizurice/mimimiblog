@@ -35,7 +35,7 @@ type Props = {
 const Index: NextPage<Props> = ({ data }) => {
   const { contents } = data;
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <Head>
         <title>みみみみみブログ</title>
       </Head>

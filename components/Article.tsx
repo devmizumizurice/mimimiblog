@@ -89,7 +89,7 @@ const Article: FC<Props> = ({ data }) => {
         )}
 
         <div
-          className="prose"
+          className="prose prose-sm sm:prose lg:prose-lg break-words"
           dangerouslySetInnerHTML={{
             __html: highlightedBody,
           }}
