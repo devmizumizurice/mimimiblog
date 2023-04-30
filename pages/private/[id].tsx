@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps = getServerSidePropsWrapper(
           data: {
             title: data.title,
             description: data.description || "",
-            thumbnail: data.thumbnail,
+            thumbnail: data.thumbnail || null,
           },
           type: "nouser",
           organization: data.organization,
@@ -42,7 +42,7 @@ export const getServerSideProps: GetServerSideProps = getServerSidePropsWrapper(
           data: {
             title: data.title,
             description: data.description || "",
-            thumbnail: data.thumbnail,
+            thumbnail: data.thumbnail || null,
           },
           type: "notverified",
           organization: data.organization,

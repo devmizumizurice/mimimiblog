@@ -46,7 +46,7 @@ const Article: FC<Props> = ({ data }) => {
   return (
     <main className="max-w-screen-lg flex flex-row m-auto py-4">
       <div className="w-full lg:w-2/3 px-2">
-        {thumbnail !== undefined && (
+        {thumbnail !== null && thumbnail !== undefined && (
           <div className="mb-2">
             <Image
               src={thumbnail.url}
