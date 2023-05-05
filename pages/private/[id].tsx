@@ -78,6 +78,30 @@ const PrivateId: NextPage<Props> = ({ data, type, organization }) => {
       <main className="max-w-screen-lg m-auto py-4">
         <Head>
           <title>組織専用記事 - みみみみみブログ</title>
+          <meta
+            property="og:title"
+            content={`${data.title} - みみみみみブログ`}
+          />
+          <meta property="og:description" content={data.description} />
+          <meta
+            property="og:url"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta
+            property="og:image"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="みみみみみブログ" />
+          <meta name="twitter:card" content="summary" />
         </Head>
         <Article data={data} />
         <Alert
@@ -93,6 +117,30 @@ const PrivateId: NextPage<Props> = ({ data, type, organization }) => {
       <main className="max-w-screen-lg m-auto py-4">
         <Head>
           <title>会員専用記事 - みみみみみブログ</title>
+          <meta
+            property="og:title"
+            content={`${data.title} - みみみみみブログ`}
+          />
+          <meta property="og:description" content={data.description} />
+          <meta
+            property="og:url"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta
+            property="og:image"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="みみみみみブログ" />
+          <meta name="twitter:card" content="summary" />
         </Head>
         <Article data={data} />
         <Alert
@@ -108,6 +156,30 @@ const PrivateId: NextPage<Props> = ({ data, type, organization }) => {
       <main className="max-w-screen-lg m-auto py-4">
         <Head>
           <title>組織専用記事 - みみみみみブログ</title>
+          <meta
+            property="og:title"
+            content={`${data.title} - みみみみみブログ`}
+          />
+          <meta property="og:description" content={data.description} />
+          <meta
+            property="og:url"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta
+            property="og:image"
+            content={
+              data.thumbnail != undefined
+                ? data.thumbnail.url
+                : "https://mimimiblog.vercel.app/_next/image?url=%2Fnoimg.png&w=1920&q=75"
+            }
+          />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content="みみみみみブログ" />
+          <meta name="twitter:card" content="summary" />
         </Head>
         <Article data={data} />
         <Alert
